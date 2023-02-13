@@ -5,15 +5,20 @@ using SceneTransition;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour, IInteractable
+public class Door : MonoBehaviour
 {
     [SerializeField] private string _nextScene;
     [SerializeField] private Vector3 _playerPlacement;
-
-    public void Execute()
+    
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        GameManager.Instance.TransitionManager.LaunchTransitionOut(TransitionType.Slide);
-        StartCoroutine(LaunchScene());
+        print("trigger");
+        PlayerController playerController = col.gameObject.GetComponent<PlayerController>();
+        if (playerController != null)
+        {
+            GameManager.Instance.TransitionManager.LaunchTransitionOut(TransitionType.Slide);
+            StartCoroutine(LaunchScene());
+        }
     }
 
     private IEnumerator LaunchScene()
@@ -21,7 +26,8 @@ public class Door : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(1f);
         PlayerPrefs.SetString(GameManager.NextSceneKey, _nextScene);
 
-        GameManager.Instance.Player.transform.position = _playerPlacement;
+        PlayerPrefs.SetFloat("positionX", _playerPlacement.x);
+        PlayerPrefs.SetFloat("positionY", _playerPlacement.y);
         SceneManager.LoadScene("GameCommon");
     }
     

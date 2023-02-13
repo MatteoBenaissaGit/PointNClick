@@ -1,23 +1,40 @@
+
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    NavMeshAgent navMeshAgent;
+    [SerializeField] private Bullet _bulletPrefab;
+    
+    private NavMeshAgent _navMeshAgent;
+
     private void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
         
-        navMeshAgent.updateRotation = false;
-        navMeshAgent.updateUpAxis = false;
+        _navMeshAgent.updateRotation = false;
+        _navMeshAgent.updateUpAxis = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Move(mousePosWorld);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Bullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+            bullet.EndPoint = mousePosWorld;
+        }
     }
 
     public void Move(Vector2 position)
     {
-        navMeshAgent.destination = new Vector3(position.x, position.y, transform.position.z);
+        _navMeshAgent.destination = new Vector3(position.x, position.y, transform.position.z);
     }
 }

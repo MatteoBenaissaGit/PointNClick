@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     
     public const string NextSceneKey = "NextScene";
 
+
     private void Awake()
     {
         if (Instance == null)
@@ -30,25 +31,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "Exterior"), LoadSceneMode.Additive);
         PlayerPrefs.DeleteKey(NextSceneKey);
-    }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        if (PlayerPrefs.HasKey("positionX") && PlayerPrefs.HasKey("positionY"))
         {
-            Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Player.Move(mousePosWorld);
-
-            RaycastHit2D hit = Physics2D.Raycast(mousePosWorld, Vector2.right, 0.01f);
-
-            if (hit.collider != null)
-            {
-                IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-                if (interactable != null)
-                {
-                    interactable.Execute();
-                }
-            }
+            Player.transform.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
         }
     }
 
