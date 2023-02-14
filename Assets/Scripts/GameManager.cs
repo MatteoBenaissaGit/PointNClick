@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using SceneTransition;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,8 +12,12 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public PlayerController Player { get; private set; }
     [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
     [field: SerializeField] public TransitionManager TransitionManager { get; private set; }
+    [field: SerializeField] public DialogList DialogList { get; private set; }
+    [field: SerializeField] public ConditionList ConditionList { get; private set; }
     
     public const string NextSceneKey = "NextScene";
+
+    public TMP_Text DialogText;
 
 
     private void Awake()
