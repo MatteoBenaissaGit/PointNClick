@@ -566,6 +566,8 @@ MonoBehaviour:
       IsTrue: 0
     - Name: HasShot
       IsTrue: 0
+    - Name: HasPickUpObject
+      IsTrue: 0
   - Name: Object
     Conditions:
     - Name: ShotOnObject

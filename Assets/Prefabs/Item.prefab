@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6181214291543130631}
   - component: {fileID: 6181214291543130628}
   - component: {fileID: 6181214291543130629}
+  - component: {fileID: 3794755727370763061}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -116,3 +117,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Circle
   <Image>k__BackingField: {fileID: -291259933, guid: 2592b8d12341e2c4c85e043d5305f4c8, type: 3}
+  _itemPickupActivateConditionList:
+  - {fileID: 3794755727370763061}
+--- !u!114 &3794755727370763061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181214291543130634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50536244dbab4d3287850a101403d902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NPCName: PNJ1
+  _conditionName: HasPickUpObject
