@@ -33,7 +33,7 @@ public class NPCController : MonoBehaviour, IInteractable
         //manage conditions
         if (dialog.ActivateAnotherConditionAtEnd)
         {
-            ValueDontDestroyOnLoad.Instance.ActivateCondition(_name, dialog.ConditionToActivateAtEnd, true);
+            ValueDontDestroyOnLoad.Instance.ActivateCondition(dialog.ConditionToActivateAtEnd, dialog.ConditionToActivateAtEnd, true);
         }
         
         //coroutine hide
@@ -47,6 +47,7 @@ public struct Dialog
     public string Condition;
     [TextArea] public string DialogText;
     public bool ActivateAnotherConditionAtEnd;
+    public string ConditionHolderToActivateAtEnd;
     public string ConditionToActivateAtEnd;
 }
 

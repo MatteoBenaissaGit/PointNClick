@@ -6,9 +6,9 @@ namespace DefaultNamespace
     public class ObjectHitConditionToActivate : MonoBehaviour, IInteractable
     {
         [SerializeField] private string _name;
-        [SerializeField] private string _dialogLocked;
+        [SerializeField, TextArea] private string _dialogLocked;
         [SerializeField] private string _condition;
-        [SerializeField] private string _dialogUnlocked;
+        [SerializeField, TextArea] private string _dialogUnlocked;
         [SerializeField] private bool _dropItemWhenUncloked;
         [SerializeField] private ObjectHitDropItem _objectHitDropItem;
         [SerializeField] private bool _changeSpriteWhenUnlocked;
