@@ -33,7 +33,7 @@ public class NPCController : MonoBehaviour, IInteractable
         //manage conditions
         if (dialog.ActivateAnotherConditionAtEnd)
         {
-            ValueDontDestroyOnLoad.Instance.ActivateCondition(dialog.ConditionToActivateAtEnd, dialog.ConditionToActivateAtEnd, true);
+            ValueDontDestroyOnLoad.Instance.ActivateCondition(dialog.ConditionHolderToActivateAtEnd, dialog.ConditionToActivateAtEnd, true);
         }
         
         //coroutine hide

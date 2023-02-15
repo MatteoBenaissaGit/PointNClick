@@ -1142,6 +1142,9 @@ MonoBehaviour:
   _objectHitDropItem: {fileID: 0}
   _changeSpriteWhenUnlocked: 0
   _objectHitChangeSprite: {fileID: 0}
+  _activateAConditionWhenHitUnlocked: 1
+  _hitUnlockedConditionHolderName: Brian
+  _hitUnlockedConditionName: Line08
 --- !u!1 &1878650859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,8 +2027,40 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[0].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[1].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[2].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[3].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[4].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[5].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[6].ConditionHolderToActivateAtEnd
       value: Poster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[7].ConditionHolderToActivateAtEnd
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[8].ConditionHolderToActivateAtEnd
+      value: Brian
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037791, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_Name

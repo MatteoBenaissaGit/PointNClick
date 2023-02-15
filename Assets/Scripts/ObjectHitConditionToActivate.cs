@@ -13,6 +13,9 @@ namespace DefaultNamespace
         [SerializeField] private ObjectHitDropItem _objectHitDropItem;
         [SerializeField] private bool _changeSpriteWhenUnlocked;
         [SerializeField] private ObjectHitChangeSprite _objectHitChangeSprite;
+        [SerializeField] private bool _activateAConditionWhenHitUnlocked;
+        [SerializeField] private string _hitUnlockedConditionHolderName;
+        [SerializeField] private string _hitUnlockedConditionName;
 
         private int _index;
 
@@ -39,6 +42,11 @@ namespace DefaultNamespace
                 if (_changeSpriteWhenUnlocked)
                 {
                     _objectHitChangeSprite.ChangeSprite();
+                }
+
+                if (_activateAConditionWhenHitUnlocked)
+                {
+                    ValueDontDestroyOnLoad.Instance.ActivateCondition(_hitUnlockedConditionHolderName, _hitUnlockedConditionName, true);
                 }
             }
         }

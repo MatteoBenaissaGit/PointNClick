@@ -24,6 +24,8 @@ public class ValueDontDestroyOnLoad : MonoBehaviour
 
     public void ActivateCondition(string characterName, string conditionName, bool activate)
     {
+        print($"activate {characterName}-{conditionName}:{activate}");
+
         //set all conditions to false
         List<Condition> conditions = new List<Condition>();
         foreach (Condition condition in ConditionsList.Find(x => x.Name == characterName).Conditions)

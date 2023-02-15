@@ -28,8 +28,7 @@ public class Bullet : MonoBehaviour
                 interactable.Execute();
             }
         }
-        
-        
+
         //particles
         _particleSystem.ForEach(x => x.Play());
         _particleSystem.ForEach(x => x.transform.parent = GameManager.Instance.transform);
