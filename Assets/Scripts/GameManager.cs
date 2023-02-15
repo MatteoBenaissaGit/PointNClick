@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
+using Febucci.UI;
 using SceneTransition;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,13 +16,11 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public PlayerController Player { get; private set; }
     [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
     [field: SerializeField] public TransitionManager TransitionManager { get; private set; }
-    [field: SerializeField] public DialogList DialogList { get; private set; }
-    [field: SerializeField] public ConditionList ConditionList { get; private set; }
-    
+
     public const string NextSceneKey = "NextScene";
-
+    
     public TMP_Text DialogText;
-
+    public Image DialogBackground;
 
     private void Awake()
     {
@@ -28,14 +30,19 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Two GameManager");
+            Destroy(gameObject);
         }
+        
+        //text
+        DialogBackground.DOFade(0, 0);
+        DialogText.text = string.Empty;
     }
 
     private void Start()
     {
         SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "Exterior"), LoadSceneMode.Additive);
         PlayerPrefs.DeleteKey(NextSceneKey);
+        
         if (PlayerPrefs.HasKey("positionX") && PlayerPrefs.HasKey("positionY"))
         {
             Player.transform.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
@@ -46,4 +53,25 @@ public class GameManager : MonoBehaviour
     {
         CanvasInventory.AddItem(item);
     }
+
+    public void ShowDialog(string text)
+    {
+        DialogBackground.DOFade(0.4f, 0.3f);
+        DialogText.text = text;
+    }
+    
+    public IEnumerator HideDialog(float time)
+    {
+        yield return new WaitForSeconds(time);
+        DialogBackground.DOFade(0, 0.2f);
+        DialogText.text = string.Empty;
+    }
+}
+
+[Serializable]
+public struct NPC
+{
+    public string Name;
+    public string Scene;
+    public NPCController NPCController;
 }

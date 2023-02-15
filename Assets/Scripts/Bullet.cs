@@ -23,12 +23,12 @@ public class Bullet : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.01f);
         if (hit.collider != null)
         {
-            IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-            if (interactable != null)
+            foreach (IInteractable interactable in hit.collider.GetComponents<IInteractable>())
             {
                 interactable.Execute();
             }
         }
+        
         
         //particles
         _particleSystem.ForEach(x => x.Play());

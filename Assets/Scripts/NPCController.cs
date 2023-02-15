@@ -1,36 +1,52 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class NPCController : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string _startDialog;
-    [SerializeField, ReadOnly] private string _dialogIDToExecute;
-    [SerializeField] private List<ConditionToDialog> _dialogsListAndCondition;
-    
-    private void Start()
-    {
-        _dialogIDToExecute = _startDialog;
-    }
+    [SerializeField] private string _name;
+    [SerializeField] private List<Dialog> _dialogs;
 
+    private int _index = 0;
+    
     public void Execute()
     {
+        //dialog choice
+        List<Condition> conditions = ValueDontDestroyOnLoad.Instance.ConditionsList.Find(x => x.Name == _name).Conditions;
+        Dialog dialog = new Dialog();
+        foreach (Condition condition in conditions)
+        {
+            if (condition.IsTrue)
+            {
+                print(condition.Name);
+                dialog = _dialogs.Find(x => x.Condition == condition.Name);
+            }
+        }
 
-        List<Condition> conditions = GameManager.Instance.ConditionList.Conditions;
-        _dialogIDToExecute = _dialogsListAndCondition
-            .Find(x => conditions.Find(y => y.ConditionID == x.ConditionToBeTrue).IsTrue).DialogID;
+        string index = _index == 0 ? " " : "";
+        _index = _index == 0 ? 1 : 0;
+        string text = $"{_name} : {dialog.DialogText}{index}";
+
+        //show dialog
+        GameManager.Instance.ShowDialog(text);
         
-        string text = GameManager.Instance.DialogList.Dialogs.Find(x => x.DialogID == _dialogIDToExecute).Dialog;
+        //manage conditions
+        if (dialog.ActivateAnotherConditionAtEnd)
+        {
+            ValueDontDestroyOnLoad.Instance.ActivateCondition(_name, dialog.ConditionToActivateAtEnd, true);
+        }
         
-        GameManager.Instance.DialogText.text = text;
+        //coroutine hide
+        StartCoroutine(GameManager.Instance.HideDialog(2));
     }
 }
 
 [Serializable]
-public struct ConditionToDialog
+public struct Dialog
 {
-    public string ConditionToBeTrue;
-    public string DialogID;
+    public string Condition;
+    [TextArea] public string DialogText;
+    public bool ActivateAnotherConditionAtEnd;
+    public string ConditionToActivateAtEnd;
 }
+
