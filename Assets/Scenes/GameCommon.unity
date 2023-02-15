@@ -558,19 +558,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConditionsList:
-  - Name: PNJ1
+  - Name: Brian
     Conditions:
-    - Name: HasntTalked
+    - Name: Line01
       IsTrue: 1
-    - Name: HasTalked
+    - Name: Line02
       IsTrue: 0
-    - Name: HasShot
+    - Name: Line03
       IsTrue: 0
-    - Name: HasPickUpObject
+    - Name: Line04
+      IsTrue: 0
+    - Name: Line05
+      IsTrue: 0
+    - Name: Line06
+      IsTrue: 0
+    - Name: Line07
+      IsTrue: 0
+    - Name: Line08
+      IsTrue: 0
+    - Name: Line09
+      IsTrue: 0
+    - Name: Line10
       IsTrue: 0
   - Name: Object
     Conditions:
     - Name: ShotOnObject
+      IsTrue: 0
+  - Name: Poster
+    Conditions:
+    - Name: CanLook
       IsTrue: 0
 --- !u!4 &1629278531
 Transform:
