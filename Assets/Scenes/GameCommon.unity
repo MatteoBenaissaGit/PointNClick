@@ -580,13 +580,65 @@ MonoBehaviour:
       IsTrue: 0
     - Name: Line10
       IsTrue: 0
-  - Name: Object
+  - Name: Barman
     Conditions:
-    - Name: ShotOnObject
+    - Name: Line01
+      IsTrue: 1
+    - Name: Line02
+      IsTrue: 0
+    - Name: Line03
+      IsTrue: 0
+    - Name: Line04
+      IsTrue: 0
+    - Name: Line05
+      IsTrue: 0
+    - Name: Line06
+      IsTrue: 0
+    - Name: Line07
+      IsTrue: 0
+    - Name: Line08
+      IsTrue: 0
+    - Name: Line09
+      IsTrue: 0
+    - Name: Line10
+      IsTrue: 0
+    - Name: Line11
+      IsTrue: 0
+    - Name: Line12
       IsTrue: 0
   - Name: Poster
     Conditions:
     - Name: CanLook
+      IsTrue: 0
+  - Name: Medocs
+    Conditions:
+    - Name: CanTake
+      IsTrue: 0
+  - Name: SickMan
+    Conditions:
+    - Name: Line01
+      IsTrue: 1
+    - Name: Line02
+      IsTrue: 0
+    - Name: Line03
+      IsTrue: 0
+    - Name: Line04
+      IsTrue: 0
+    - Name: Line05
+      IsTrue: 0
+    - Name: Line06
+      IsTrue: 0
+    - Name: Line07
+      IsTrue: 0
+    - Name: Line09
+      IsTrue: 0
+    - Name: Line08
+      IsTrue: 0
+    - Name: Line10
+      IsTrue: 0
+  - Name: GoldenBullet
+    Conditions:
+    - Name: CanTake
       IsTrue: 0
 --- !u!4 &1629278531
 Transform:

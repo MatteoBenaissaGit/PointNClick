@@ -523,11 +523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.79
+      value: -2.93
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -563,15 +563,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037789, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _name
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.size
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[0].Condition
@@ -611,34 +611,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[0].DialogText
-      value: "Salutations Sh\xE9rif !"
+      value: Mmm ?
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[1].DialogText
-      value: "Faites quelque chose, quelqu'un fait hurler cette inf\xE2me cacophonie
-        dans toute la ville, impossible de travailler dans ces conditions."
+      value: Je ne sais pas si j'ai trop bu de la saloperie qu'ils servent ici, ou
+        si je ne supporte plus cette musique...
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[2].DialogText
-      value: "On en peut plus Sh\xE9rif ! Je tiens moi-m\xEAme \xE0 peine debout
-        !"
+      value: "...Mais j'ai horriblement mal au cr\xE2ne."
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[3].DialogText
-      value: "Si encore il nous faisait \xE9couter quelque chose de m\xE9lodieux..."
+      value: "La porte l\xE0, elle est verrouill\xE9e. Et vous n'arriverez pas \xE0
+        l'ouvrir avec de simples balles"
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[4].DialogText
-      value: "...plut\xF4t que cet insupportable assemblage de sons \xE9tranges."
+      value: "J'ai bien quelques balles dor\xE9es sur moi, elles sont \xE0 vous si
+        vous arrivez \xE0 faire disparaitre cette horrible migraine..."
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[5].DialogText
-      value: "Moi qui aime tant le calme, qu'est ce que je serais pr\xEAt \xE0 donner
-        pour ne plus rien entendre..."
+      value: "Alors ? Vous avez trouv\xE9 quelque chose pour m'aider ? que je serais
+        pr\xEAt \xE0 donner pour ne plus rien entendre..."
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[6].DialogText
-      value: J'en ai vraiment assez de ce boucan...
+      value: "Merci beaucoup Sh\xE9rif ! Je me sens d\xE9j\xE0 mieux ! Tenez ! Voil\xE0
+        vos balles."
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[7].DialogText
@@ -671,11 +673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[5].ConditionToActivateAtEnd
-      value: Line07
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[6].ConditionToActivateAtEnd
-      value: 
+      value: CanTake
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[7].ConditionToActivateAtEnd
@@ -703,11 +705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[5].ActivateAnotherConditionAtEnd
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[6].ActivateAnotherConditionAtEnd
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[7].ActivateAnotherConditionAtEnd
@@ -715,31 +717,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[0].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[1].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[2].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[3].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[4].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: SickMan
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[5].ConditionHolderToActivateAtEnd
-      value: Barman
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[6].ConditionHolderToActivateAtEnd
-      value: 
+      value: GoldenBullet
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[7].ConditionHolderToActivateAtEnd
@@ -751,34 +753,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
---- !u!1 &410024719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7010449247770037791, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
-  m_PrefabInstance: {fileID: 410024718}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &410024720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410024719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a87e76fff5941768e4a3490d2fd2840, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Medocs
-  _dialogLocked: 
-  _condition: CanTake
-  _dialogUnlocked: 
-  _dropItemWhenUncloked: 1
-  _objectHitDropItem: {fileID: 1597724881}
-  _changeSpriteWhenUnlocked: 0
-  _objectHitChangeSprite: {fileID: 0}
-  _activateAConditionWhenHitUnlocked: 0
-  _hitUnlockedConditionHolderName: 
-  _hitUnlockedConditionName: 
 --- !u!1 &421290922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,11 +1234,10 @@ GameObject:
   m_Component:
   - component: {fileID: 804946248}
   - component: {fileID: 804946247}
-  - component: {fileID: 804946250}
   - component: {fileID: 804946249}
-  - component: {fileID: 804946251}
+  - component: {fileID: 804946250}
   m_Layer: 0
-  m_Name: Headset
+  m_Name: GoldenBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1330,40 +1303,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804946246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.73, y: -0.52, z: 0}
+  m_LocalPosition: {x: -2.31, y: -2.42, z: 0}
   m_LocalScale: {x: 0.61993, y: 0.61993, z: 0.61993}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &804946249
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804946246}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &804946250
+--- !u!114 &804946249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1372,11 +1319,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 804946246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4273ba275332f8448bb12ca0b7fef1e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a87e76fff5941768e4a3490d2fd2840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amplitude: 0.5
---- !u!114 &804946251
+  _name: GoldenBullet
+  _dialogLocked: 
+  _condition: CanTake
+  _dialogUnlocked: 
+  _dropItemWhenUncloked: 1
+  _objectHitDropItem: {fileID: 804946250}
+  _changeSpriteWhenUnlocked: 0
+  _objectHitChangeSprite: {fileID: 0}
+  _activateAConditionWhenHitUnlocked: 0
+  _hitUnlockedConditionHolderName: 
+  _hitUnlockedConditionName: 
+--- !u!114 &804946250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1388,9 +1345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5843a158e44a9b91b46fb91f1f39b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropAtShot: 1
-  _itemPrefab: {fileID: 6181214291543130629, guid: 7e2920fe0eaa43c43ad4b50532e9a9d2, type: 3}
-  _itemDropPosition: {x: 4.77, y: -1.82, z: 0}
+  _dropAtShot: 0
+  _itemPrefab: {fileID: 6181214291543130629, guid: 35f3933b6eeba95458b5c1f23e803f01, type: 3}
+  _itemDropPosition: {x: -2.33, y: -2.49, z: 0}
 --- !u!1 &824714509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,106 +1759,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1703362041}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1597724880
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1597724885}
-  - component: {fileID: 1597724884}
-  - component: {fileID: 1597724881}
-  m_Layer: 0
-  m_Name: Medocs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1597724881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597724880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb5843a158e44a9b91b46fb91f1f39b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dropAtShot: 0
-  _itemPrefab: {fileID: 6181214291543130629, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
-  _itemDropPosition: {x: 1.89, y: -1.4, z: 0}
---- !u!212 &1597724884
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597724880}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.40583837, g: 0.56896245, b: 0.9056604, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1597724885
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597724880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.86, y: 0.63, z: 0}
-  m_LocalScale: {x: 0.61993, y: 0.61993, z: 0.61993}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695837001
 GameObject:
@@ -2619,7 +2476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452111, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: _nextScene
-      value: Toilets
+      value: Exterior
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452111, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: _playerPlacement.x
