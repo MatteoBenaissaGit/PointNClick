@@ -11,6 +11,8 @@ namespace DefaultNamespace
         [SerializeField] private string _dialogUnlocked;
         [SerializeField] private bool _dropItemWhenUncloked;
         [SerializeField] private ObjectHitDropItem _objectHitDropItem;
+        [SerializeField] private bool _changeSpriteWhenUnlocked;
+        [SerializeField] private ObjectHitChangeSprite _objectHitChangeSprite;
 
         private int _index;
 
@@ -27,9 +29,17 @@ namespace DefaultNamespace
             GameManager.Instance.ShowDialog(text);
             StartCoroutine(GameManager.Instance.HideDialog(2));
 
-            if (condition.IsTrue && _dropItemWhenUncloked)
+            if (condition.IsTrue)
             {
-                _objectHitDropItem.DropItem();
+                if (_dropItemWhenUncloked)
+                {
+                    _objectHitDropItem.DropItem();
+                }
+
+                if (_changeSpriteWhenUnlocked)
+                {
+                    _objectHitChangeSprite.ChangeSprite();
+                }
             }
         }
     }

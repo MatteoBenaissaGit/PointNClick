@@ -1305,6 +1305,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 595186295659779152, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _NPCName
+      value: PNJ1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595186295659779152, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _activate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595186295659779152, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _conditionName
+      value: HasShot
+      objectReference: {fileID: 0}
     - target: {fileID: 595186295659779153, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1352,6 +1364,18 @@ PrefabInstance:
     - target: {fileID: 595186295659779156, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
       propertyPath: m_Name
       value: ObjectHitDialogCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 595186296333609961, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _NPCName
+      value: Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 595186296333609961, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _activate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595186296333609961, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
+      propertyPath: _conditionName
+      value: ShotOnObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd498aa2ee22344095046617718bbe4, type: 3}
@@ -1760,14 +1784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4665613311239890606, guid: bf43264f0cdbc0a48903bfa3eb425406, type: 3}
-      propertyPath: _itemDropPosition.x
-      value: 2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665613311239890606, guid: bf43264f0cdbc0a48903bfa3eb425406, type: 3}
-      propertyPath: _itemDropPosition.y
-      value: -2.94
-      objectReference: {fileID: 0}
     - target: {fileID: 7665063080318521286, guid: bf43264f0cdbc0a48903bfa3eb425406, type: 3}
       propertyPath: m_Name
       value: ObjectHitConditionToActivate

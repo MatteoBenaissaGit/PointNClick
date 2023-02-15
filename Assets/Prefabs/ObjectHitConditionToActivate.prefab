@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7665063080318521287}
   - component: {fileID: 4665613311239890606}
   - component: {fileID: 7665063080318521291}
+  - component: {fileID: 4891469225884836683}
   - component: {fileID: 7665063080318521290}
   m_Layer: 0
   m_Name: ObjectHitConditionToActivate
@@ -106,6 +107,8 @@ MonoBehaviour:
   _dialogUnlocked: 'This is unlocked '
   _dropItemWhenUncloked: 1
   _objectHitDropItem: {fileID: 4665613311239890606}
+  _changeSpriteWhenUnlocked: 1
+  _objectHitChangeSprite: {fileID: 4891469225884836683}
 --- !u!114 &4665613311239890606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dropAtShot: 0
   _itemPrefab: {fileID: 6181214291543130629, guid: f115e5a8b272e6d4eaa533062cfc69d3, type: 3}
+  _itemDropPosition: {x: 2.7, y: -2.94, z: 0}
 --- !u!114 &7665063080318521291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +137,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _amplitude: 0.5
+--- !u!114 &4891469225884836683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665063080318521286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722e21dd4c6b7fa4882d63d26b5c3b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loopSprites: 0
+  _spriteList:
+  - {fileID: 799979328, guid: 2592b8d12341e2c4c85e043d5305f4c8, type: 3}
+  - {fileID: 69066592, guid: 2592b8d12341e2c4c85e043d5305f4c8, type: 3}
+  _spriteRenderer: {fileID: 7665063080318521288}
+  _changeOnShot: 0
 --- !u!61 &7665063080318521290
 BoxCollider2D:
   m_ObjectHideFlags: 0

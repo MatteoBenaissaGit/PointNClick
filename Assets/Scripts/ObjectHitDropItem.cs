@@ -9,6 +9,8 @@ namespace DefaultNamespace
         [SerializeField] private bool _dropAtShot = true;
         [SerializeField] private Item _itemPrefab;
         [SerializeField] private Vector3 _itemDropPosition;
+
+        private bool _hasDropped;
         
         public void Execute()
         {
@@ -20,11 +22,16 @@ namespace DefaultNamespace
 
         public void DropItem()
         {
-            print("dropItem");
+            if (_hasDropped)
+            {
+                return;
+            }
+
             if (_itemPrefab != null)
             {
                 Item item = Instantiate(_itemPrefab, transform.position, Quaternion.identity);
                 item.transform.DOMove(_itemDropPosition, 0.5f);
+                _hasDropped = true;
             }
         }
         

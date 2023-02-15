@@ -8,6 +8,7 @@ public class ObjectHitChangeSprite : MonoBehaviour, IInteractable
     [SerializeField] private bool _loopSprites;
     [SerializeField] private List<Sprite> _spriteList;
     [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private bool _changeOnShot = true;
 
     private int _spriteIndex;
 
@@ -18,6 +19,14 @@ public class ObjectHitChangeSprite : MonoBehaviour, IInteractable
     }
 
     public void Execute()
+    {
+        if (_changeOnShot)
+        {
+            ChangeSprite();
+        }
+    }
+
+    public void ChangeSprite()
     {
         _spriteIndex++;
         if (_spriteIndex >= _spriteList.Count)
@@ -31,6 +40,7 @@ public class ObjectHitChangeSprite : MonoBehaviour, IInteractable
                 _spriteIndex--;
             }
         }
+
         _spriteRenderer.sprite = _spriteList[_spriteIndex];
     }
 }
