@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     
     public TMP_Text DialogText;
     public Image DialogBackground;
+    [HideInInspector] public float HideTimer;
 
     private void Awake()
     {
@@ -45,7 +46,17 @@ public class GameManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("positionX") && PlayerPrefs.HasKey("positionY"))
         {
+            print($"place player : {new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"))}");
             Player.transform.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
+        }
+    }
+
+    private void Update()
+    {
+        HideTimer -= Time.deltaTime;
+        if (HideTimer <= 0 && DialogText.text != string.Empty)
+        {
+            HideDialog();    
         }
     }
 
@@ -57,13 +68,14 @@ public class GameManager : MonoBehaviour
     public void ShowDialog(string text)
     {
         DialogBackground.DOFade(0.4f, 0.3f);
+        print("show dialog");
         DialogText.text = text;
     }
     
-    public IEnumerator HideDialog(float time)
+    public void HideDialog()
     {
-        yield return new WaitForSeconds(time);
         DialogBackground.DOFade(0, 0.2f);
+        print("hideDialog");
         DialogText.text = string.Empty;
     }
 }

@@ -15,6 +15,9 @@ public class Bullet : MonoBehaviour
         transform.DOMove(EndPoint, _speed)
             .SetEase(Ease.Linear)
             .OnComplete(End);
+
+        Vector2 pos = transform.position;
+        transform.rotation = Quaternion.Euler(EndPoint - pos);
     }
 
     private void End()

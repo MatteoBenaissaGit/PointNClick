@@ -13,6 +13,10 @@ public class ValueDontDestroyOnLoad : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(this);
+            
+            //playerprefs
+            PlayerPrefs.DeleteKey("positionX");
+            PlayerPrefs.DeleteKey("positionY");
         }
         else
         {
@@ -41,9 +45,6 @@ public class ValueDontDestroyOnLoad : MonoBehaviour
         ConditionsList.Find(x => x.Name == characterName).Conditions
             .Remove(ConditionsList.Find(x => x.Name == characterName).Conditions.Find(x => x.Name == conditionName));
         ConditionsList.Find(x => x.Name == characterName).Conditions.Add(newCondition);
-        
-        //print
-        print($"{newCondition.Name}, {newCondition.IsTrue}");
     }
 }
 

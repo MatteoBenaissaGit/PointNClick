@@ -30,7 +30,7 @@ namespace DefaultNamespace
             string text = condition.IsTrue ? _dialogUnlocked + index : _dialogLocked + index;
             
             GameManager.Instance.ShowDialog(text);
-            StartCoroutine(GameManager.Instance.HideDialog(2));
+            GameManager.Instance.HideTimer = 2f;
 
             if (condition.IsTrue)
             {

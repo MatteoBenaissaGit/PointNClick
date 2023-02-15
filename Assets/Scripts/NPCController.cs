@@ -18,8 +18,8 @@ public class NPCController : MonoBehaviour, IInteractable
         {
             if (condition.IsTrue)
             {
-                print(condition.Name);
                 dialog = _dialogs.Find(x => x.Condition == condition.Name);
+                print($"{condition.Name} : {dialog.DialogText}");
             }
         }
 
@@ -35,9 +35,14 @@ public class NPCController : MonoBehaviour, IInteractable
         {
             ValueDontDestroyOnLoad.Instance.ActivateCondition(dialog.ConditionHolderToActivateAtEnd, dialog.ConditionToActivateAtEnd, true);
         }
+
+        if (dialog.ActivateAnObjectAtEnd)
+        {
+            dialog.GameObjectToActivate.SetActive(true);
+        }
         
-        //coroutine hide
-        StartCoroutine(GameManager.Instance.HideDialog(2));
+        //hide
+        GameManager.Instance.HideTimer = 2f;
     }
 }
 
@@ -49,5 +54,7 @@ public struct Dialog
     public bool ActivateAnotherConditionAtEnd;
     public string ConditionHolderToActivateAtEnd;
     public string ConditionToActivateAtEnd;
+    public bool ActivateAnObjectAtEnd;
+    public GameObject GameObjectToActivate;
 }
 
