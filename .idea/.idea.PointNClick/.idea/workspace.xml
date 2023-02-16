@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1db9d59-dafa-48a6-9e28-6fdece31c683" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PointNClick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PointNClick/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Font/Alphakind SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Font/Alphakind SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Text Animator/Extra/Typewriter Sound - Package.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Text Animator/Integrations/PlayMaker - Integration.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Text Animator/Integrations/Visual Scripting - Integration.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior/NavMesh-NavMeshSurface.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior/NavMesh-NavMeshSurface.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Exterior/NavMesh-NavMeshSurface.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Exterior/NavMesh-NavMeshSurface.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameCommon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameCommon.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Interior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Interior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectHitConditionToActivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectHitConditionToActivate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ValueDontDestroyOnLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ValueDontDestroyOnLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="b1db9d59-dafa-48a6-9e28-6fdece31c683" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +43,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity2020\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\mbenaissa\Documents\PointNClick -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\mbenaissa\Documents\PointNClick" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -82,10 +60,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="35680">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="35680" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -106,6 +84,7 @@
       <workItem from="1676369565134" duration="3336000" />
       <workItem from="1676448461667" duration="18321000" />
       <workItem from="1676500351009" duration="3377000" />
+      <workItem from="1676535671719" duration="295000" />
     </task>
     <servers />
   </component>
@@ -135,14 +114,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/NPCController.cs</url>
           <line>30</line>
-          <properties documentPath="C:\Users\benma\Documents\PointNClick\Assets\Scripts\NPCController.cs" initialLine="30" containingFunctionPresentation="method 'Execute'">
-            <startOffsets>
-              <option value="930" />
-            </startOffsets>
-            <endOffsets>
-              <option value="968" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\benma\Documents\PointNClick\Assets\Scripts\NPCController.cs" initialLine="30" containingFunctionPresentation="method 'Execute'" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

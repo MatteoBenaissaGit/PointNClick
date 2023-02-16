@@ -46,8 +46,11 @@ public class GameManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("positionX") && PlayerPrefs.HasKey("positionY"))
         {
-            print($"place player : {new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"))}");
             Player.transform.position = new Vector2(PlayerPrefs.GetFloat("positionX"), PlayerPrefs.GetFloat("positionY"));
+        }
+        if (PlayerPrefs.HasKey("scale"))
+        {
+            Player.transform.localScale = ValueDontDestroyOnLoad.Instance.PlayerBaseScale * PlayerPrefs.GetFloat("scale");
         }
     }
 

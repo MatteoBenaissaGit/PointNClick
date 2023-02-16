@@ -17,6 +17,13 @@ public class ValueDontDestroyOnLoad : MonoBehaviour
             //playerprefs
             PlayerPrefs.DeleteKey("positionX");
             PlayerPrefs.DeleteKey("positionY");
+            if (PlayerPrefs.HasKey("scale"))
+            {
+                PlayerPrefs.DeleteKey("scale");
+            }
+            
+            //values
+            PlayerBaseScale = Vector3.one * 3.5f;
         }
         else
         {
@@ -25,6 +32,7 @@ public class ValueDontDestroyOnLoad : MonoBehaviour
     }
 
     public List<ConditionList> ConditionsList;
+    public Vector3 PlayerBaseScale;
 
     public void ActivateCondition(string characterName, string conditionName, bool activate)
     {
