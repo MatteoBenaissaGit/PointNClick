@@ -614,7 +614,7 @@ MonoBehaviour:
     Conditions:
     - Name: CanTake
       IsTrue: 0
-  - Name: SickMan
+  - Name: Terry
     Conditions:
     - Name: Line01
       IsTrue: 1
@@ -639,6 +639,14 @@ MonoBehaviour:
   - Name: GoldenBullet
     Conditions:
     - Name: CanTake
+      IsTrue: 0
+  - Name: ToiletDoor
+    Conditions:
+    - Name: CanOpen
+      IsTrue: 0
+  - Name: Joueur
+    Conditions:
+    - Name: Line01
       IsTrue: 0
 --- !u!4 &1629278531
 Transform:
@@ -1017,6 +1025,18 @@ PrefabInstance:
     - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.5809317
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.5809317
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.5809317
       objectReference: {fileID: 0}
     - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
       propertyPath: m_LocalPosition.x
