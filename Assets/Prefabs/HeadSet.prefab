@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Circle
-  <Image>k__BackingField: {fileID: -291259933, guid: 2592b8d12341e2c4c85e043d5305f4c8, type: 3}
+  <Image>k__BackingField: {fileID: 21300000, guid: 80d2ca3479d38a74482256c1b2bf6487, type: 3}
   _itemPickupActivateConditionList:
   - {fileID: 3794755727370763061}
 --- !u!114 &3794755727370763061
