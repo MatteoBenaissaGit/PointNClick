@@ -614,7 +614,7 @@ MonoBehaviour:
     Conditions:
     - Name: CanTake
       IsTrue: 0
-  - Name: SickMan
+  - Name: Terry
     Conditions:
     - Name: Line01
       IsTrue: 1
@@ -639,6 +639,14 @@ MonoBehaviour:
   - Name: GoldenBullet
     Conditions:
     - Name: CanTake
+      IsTrue: 0
+  - Name: ToiletDoor
+    Conditions:
+    - Name: CanOpen
+      IsTrue: 0
+  - Name: Joueur
+    Conditions:
+    - Name: Line01
       IsTrue: 0
 --- !u!4 &1629278531
 Transform:

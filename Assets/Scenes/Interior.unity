@@ -678,6 +678,14 @@ PrefabInstance:
       value: Merci encore pour votre aide !
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[7].GameObjectToActivate
+      value: 
+      objectReference: {fileID: 1077502161}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
+      propertyPath: _dialogs.Array.data[7].ActivateAnObjectAtEnd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010449247770037790, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: _dialogs.Array.data[0].ConditionToActivateAtEnd
       value: Line02
       objectReference: {fileID: 0}
@@ -1295,6 +1303,7 @@ GameObject:
   - component: {fileID: 804946250}
   - component: {fileID: 804946249}
   - component: {fileID: 804946251}
+  - component: {fileID: 804946252}
   m_Layer: 0
   m_Name: Headset
   m_TagString: Untagged
@@ -1367,7 +1376,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &804946249
 BoxCollider2D:
@@ -1423,6 +1432,20 @@ MonoBehaviour:
   _dropAtShot: 1
   _itemPrefab: {fileID: 6181214291543130629, guid: 7e2920fe0eaa43c43ad4b50532e9a9d2, type: 3}
   _itemDropPosition: {x: 4.77, y: -1.82, z: 0}
+--- !u!114 &804946252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804946246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08323ec760d47fd86650a2401f39216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseMaterial: {fileID: 2100000, guid: c3a5d9f6fb17c6d45baa4a2823ae0e53, type: 2}
+  _outlineMaterial: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
 --- !u!1 &824714509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1631,76 @@ Transform:
   m_Father: {fileID: 1353289028}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1077502160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3794755727370763061, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: _conditionName
+      value: Line08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130630, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130634, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_Name
+      value: Medocs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181214291543130634, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+--- !u!1 &1077502161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181214291543130634, guid: 7c828201c87246247a1658097cfb1b32, type: 3}
+  m_PrefabInstance: {fileID: 1077502160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1121154608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1846,6 +1939,7 @@ GameObject:
   - component: {fileID: 1597724885}
   - component: {fileID: 1597724884}
   - component: {fileID: 1597724881}
+  - component: {fileID: 1597724886}
   m_Layer: 0
   m_Name: Medocs
   m_TagString: Untagged
@@ -1933,8 +2027,31 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1597724886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597724880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a87e76fff5941768e4a3490d2fd2840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Terry
+  _dialogLocked: 
+  _condition: Line08
+  _dialogUnlocked: 
+  _dropItemWhenUncloked: 1
+  _objectHitDropItem: {fileID: 1597724881}
+  _changeSpriteWhenUnlocked: 0
+  _objectHitChangeSprite: {fileID: 0}
+  _activateAConditionWhenHitUnlocked: 0
+  _hitUnlockedConditionHolderName: 
+  _hitUnlockedConditionName: 
 --- !u!1 &1695837001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +2258,7 @@ Transform:
   - {fileID: 2144416045}
   - {fileID: 1353289028}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777087447
 GameObject:
