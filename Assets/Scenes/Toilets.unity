@@ -414,11 +414,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
---- !u!1 &156997309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6441226242305452108, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
-  m_PrefabInstance: {fileID: 156997308}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &255091342
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,23 +536,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.30173
+      value: 0.4164176
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.30173
+      value: 0.4164176
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.30173
+      value: 0.4164176
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.93
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.35
+      value: -1.98
       objectReference: {fileID: 0}
     - target: {fileID: 7010449247770037788, guid: 235d075ea7080cb43a086ec3e6af9c44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1296,7 +1291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804946246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.95, y: -2.02, z: 0}
+  m_LocalPosition: {x: 4.26, y: -2.83, z: 0}
   m_LocalScale: {x: 0.61993, y: 0.61993, z: 0.61993}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1340,7 +1335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dropAtShot: 0
   _itemPrefab: {fileID: 6181214291543130629, guid: 35f3933b6eeba95458b5c1f23e803f01, type: 3}
-  _itemDropPosition: {x: -2.33, y: -2.49, z: 0}
+  _itemDropPosition: {x: -1.06, y: -3.14, z: 0}
 --- !u!1 &824714509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,9 +1558,9 @@ GameObject:
   - component: {fileID: 1239834206}
   - component: {fileID: 1239834205}
   - component: {fileID: 1239834204}
-  - component: {fileID: 1239834208}
   - component: {fileID: 1239834207}
   - component: {fileID: 1239834209}
+  - component: {fileID: 1239834210}
   m_Layer: 0
   m_Name: Locket
   m_TagString: Untagged
@@ -1667,27 +1662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseMaterial: {fileID: 2100000, guid: c3a5d9f6fb17c6d45baa4a2823ae0e53, type: 2}
   _outlineMaterial: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
---- !u!114 &1239834208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239834203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95e9779a912a4064594658b60a24b813, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Joueur
-  _dialogs:
-  - Condition: Line01
-    DialogText: "Mettons fin \xE0 tout ce vacarme !"
-    ActivateAnotherConditionAtEnd: 0
-    ConditionHolderToActivateAtEnd: 
-    ConditionToActivateAtEnd: 
-    ActivateAnObjectAtEnd: 1
-    GameObjectToActivate: {fileID: 156997309}
 --- !u!61 &1239834209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1714,6 +1688,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.49, y: 4.72}
   m_EdgeRadius: 0
+--- !u!114 &1239834210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239834203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a87e76fff5941768e4a3490d2fd2840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Joueur
+  _dialogLocked: "Mes balles ne peuvent pas d\xE9truire ce m\xE9tal."
+  _condition: Line01
+  _dialogUnlocked: "Mettons fin \xE0 tout ce vacarme !"
+  _dropItemWhenUncloked: 0
+  _objectHitDropItem: {fileID: 0}
+  _changeSpriteWhenUnlocked: 0
+  _objectHitChangeSprite: {fileID: 0}
+  _activateAConditionWhenHitUnlocked: 0
+  _hitUnlockedConditionHolderName: 
+  _hitUnlockedConditionName: 
 --- !u!1 &1557685028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,6 +2045,10 @@ PrefabInstance:
       value: Interior
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452111, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
+      propertyPath: _playerScale
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441226242305452111, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: _playerPlacement.x
       value: -3.25
       objectReference: {fileID: 0}
@@ -2065,15 +2066,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.710688
+      value: 3.4855266
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.6157
+      value: -6.57
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.605
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.z
