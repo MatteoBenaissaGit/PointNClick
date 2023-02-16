@@ -580,6 +580,8 @@ MonoBehaviour:
       IsTrue: 0
     - Name: Line10
       IsTrue: 0
+    - Name: Line11
+      IsTrue: 0
   - Name: Barman
     Conditions:
     - Name: Line01
