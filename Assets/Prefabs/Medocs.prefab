@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50536244dbab4d3287850a101403d902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _NPCName: Barman
-  _conditionName: Line08
+  _NPCName: Terry
+  _conditionName: Line07

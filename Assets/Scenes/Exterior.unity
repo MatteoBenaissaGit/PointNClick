@@ -499,11 +499,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5995
+      value: 2.18
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6489
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 6441226242305452144, guid: 3d3d1fd1e1553a54390aee81ac6a091c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1054,14 +1054,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786961176}
-  m_LocalRotation: {x: -0, y: -0, z: 0.055567864, w: 0.9984549}
-  m_LocalPosition: {x: -4.4, y: -1.9, z: 0}
-  m_LocalScale: {x: 1.453125, y: 0.95234376, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.009972761, w: 0.9999503}
+  m_LocalPosition: {x: 4.793, y: -0.771, z: 0}
+  m_LocalScale: {x: 0.6823875, y: 1.1087185, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.371}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.143}
 --- !u!114 &1786961182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   _dialogLocked: Surement une info utile plus tard.
   _condition: CanLook
   _dialogUnlocked: "J'esp\xE8re que c'est \xE7a, ils seraient suffisament idiots
-    pour le faire."
+    pour l'afficher l\xE0."
   _dropItemWhenUncloked: 0
   _objectHitDropItem: {fileID: 0}
   _changeSpriteWhenUnlocked: 0
