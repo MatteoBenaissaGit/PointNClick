@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Toilets.unity
     guid: 904df12c73b47cb4590985acdf1a06a3
+  - enabled: 1
+    path: Assets/Scenes/Thx4Playing.unity
+    guid: 59e1e7b58c8fceb48b6ffc66766266e8
   m_configObjects: {}
