@@ -9986,3 +9986,4 @@ MonoBehaviour:
   - {fileID: 8059248823993658865}
   _speed: 0.1
   EndPoint: {x: 0, y: 0}
+  _bulletAudioClip: {fileID: 8300000, guid: a5c97bd751e6d8f469c0c4cee8656a5d, type: 3}

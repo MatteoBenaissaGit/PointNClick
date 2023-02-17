@@ -22,7 +22,21 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    [SerializeField] private GameObject Canva;
+
     #endregion
+
+    private void Start()
+    {
+        Canva.SetActive(false);
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Canva.SetActive(Canva.activeInHierarchy == false);
+        }
+    }
 
     [Header("Sources")]
     [SerializeField] private AudioSource _musicSource, _effectSource, _dialogSource;

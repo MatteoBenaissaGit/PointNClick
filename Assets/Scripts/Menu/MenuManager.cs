@@ -106,6 +106,15 @@ namespace Menu
             _buttonManagerList.Add(SideSlideMenuReferences.PlayButton);
             _buttonManagerList.Add(SideSlideMenuReferences.CreditsButton);
             _buttonManagerList.Add(SideSlideMenuReferences.QuitButton);
+
+            if (CanvasInventory.Instance != null)
+            {
+                Destroy(CanvasInventory.Instance.gameObject);
+            }
+            if (ValueDontDestroyOnLoad.Instance != null)
+            {
+                Destroy(ValueDontDestroyOnLoad.Instance.gameObject);
+            }
         }
 
         #region Methods

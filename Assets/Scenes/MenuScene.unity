@@ -454,6 +454,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88752b85dab7944686bf733691304fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &784916466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5492391886055665638, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887511267749, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666547, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_Name
+      value: SoundManagerPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666556, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: Canva
+      value: 
+      objectReference: {fileID: 784916467}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22586836
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.998678
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887516666557, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887631587930, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887631587930, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492391887631587930, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 721748c6c9eccb346906782ebefd0a6e, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+--- !u!1 &784916467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5492391887925243672, guid: ac7cbb9c427f6744eb7c1af2545127da, type: 3}
+  m_PrefabInstance: {fileID: 784916466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &973575067
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3242611112049812521, guid: b10ae47af206b114cbbbfb56def21069, type: 3}
       propertyPath: CreditSceneName
-      value: MenuScene
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 3242611112049812521, guid: b10ae47af206b114cbbbfb56def21069, type: 3}
       propertyPath: _transitionManager

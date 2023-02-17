@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using SceneTransition;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class ObjectHitChangeScene : MonoBehaviour, IInteractable
 {
@@ -31,7 +34,7 @@ public class ObjectHitChangeScene : MonoBehaviour, IInteractable
     public void Execute()
     {
         _canTime = true;
-        GameManager.Instance.TransitionManager.LaunchTransitionIn(SceneTransition.TransitionType.Slide);
+        GameManager.Instance.TransitionManager.LaunchTransitionOut(TransitionType.Slide);
     }
 
     private void Change()

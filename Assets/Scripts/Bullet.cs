@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private List<ParticleSystem> _particleSystem;
     [SerializeField, Range(0,2)] private float _speed;
     [HideInInspector] public Vector2 EndPoint;
+    [SerializeField] private AudioClip _bulletAudioClip;
 
     private void Start()
     {
@@ -18,6 +19,9 @@ public class Bullet : MonoBehaviour
 
         Vector2 pos = transform.position;
         transform.rotation = Quaternion.Euler(EndPoint - pos);
+
+        //audio
+        SoundManager.Instance.PlaySound(_bulletAudioClip);
     }
 
     private void End()
