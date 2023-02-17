@@ -566,6 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1104535984}
   - component: {fileID: 1104535983}
+  - component: {fileID: 1104535985}
   m_Layer: 0
   m_Name: Alcoholic
   m_TagString: Untagged
@@ -632,14 +633,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104535982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.73, y: 2.281, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08972166, w: -0.99596685}
+  m_LocalPosition: {x: 3.73, y: 1.39, z: 0}
   m_LocalScale: {x: 0.119598895, y: 0.119598895, z: 0.119598895}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.295}
+--- !u!114 &1104535985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104535982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4849fb52027a5984ca2064e5ee9d3ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1129425755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1191,7 @@ MonoBehaviour:
   _activateAConditionWhenHitUnlocked: 1
   _hitUnlockedConditionHolderName: Brian
   _hitUnlockedConditionName: Line08
+  _objectActivation: []
 --- !u!114 &1786961183
 MonoBehaviour:
   m_ObjectHideFlags: 0

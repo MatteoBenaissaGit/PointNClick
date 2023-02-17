@@ -934,6 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600759484}
   - component: {fileID: 600759485}
+  - component: {fileID: 600759486}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -1008,6 +1009,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &600759486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600759483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4849fb52027a5984ca2064e5ee9d3ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612530868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2153,7 @@ MonoBehaviour:
   _activateAConditionWhenHitUnlocked: 0
   _hitUnlockedConditionHolderName: 
   _hitUnlockedConditionName: 
+  _objectActivation: []
 --- !u!1 &1695837001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2744,7 @@ GameObject:
   - component: {fileID: 1874651408}
   - component: {fileID: 1874651410}
   - component: {fileID: 1874651411}
+  - component: {fileID: 1874651412}
   m_Layer: 0
   m_Name: Darts
   m_TagString: Untagged
@@ -2843,6 +2858,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4204677, y: 2.2447577}
   m_EdgeRadius: 0
+--- !u!114 &1874651412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874651407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08323ec760d47fd86650a2401f39216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseMaterial: {fileID: 2100000, guid: c3a5d9f6fb17c6d45baa4a2823ae0e53, type: 2}
+  _outlineMaterial: {fileID: 2100000, guid: 4e0ae13635569ec4faae7fbcd37a0854, type: 2}
 --- !u!1 &2144416044
 GameObject:
   m_ObjectHideFlags: 0

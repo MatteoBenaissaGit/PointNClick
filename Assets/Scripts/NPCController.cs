@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class NPCController : MonoBehaviour, IInteractable
 {
@@ -8,7 +9,7 @@ public class NPCController : MonoBehaviour, IInteractable
     [SerializeField] private List<Dialog> _dialogs;
 
     private int _index = 0;
-    
+
     public void Execute()
     {
         //dialog choice
@@ -44,6 +45,8 @@ public class NPCController : MonoBehaviour, IInteractable
         //hide
         GameManager.Instance.HideTimer = 2f;
     }
+
+  
 }
 
 [Serializable]

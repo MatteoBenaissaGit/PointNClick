@@ -10,18 +10,20 @@ public class OutlineOnHover : MonoBehaviour
 
     private void Start()
     {
+        Cursor.SetCursor(GameManager.Instance.CursorBase, Vector2.zero, CursorMode.Auto);
         gameObject.GetComponent<SpriteRenderer>().material = _baseMaterial;
     }
 
     private void OnMouseEnter()
     {
+        Cursor.SetCursor(GameManager.Instance.CursorHover, Vector2.zero, CursorMode.Auto);
         gameObject.GetComponent<SpriteRenderer>().material = _outlineMaterial;
     }
 
     private void OnMouseExit()
     {
+        Cursor.SetCursor(GameManager.Instance.CursorBase, Vector2.zero, CursorMode.Auto);
         gameObject.GetComponent<SpriteRenderer>().material = _baseMaterial;
-
     }
 
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace DefaultNamespace
 {
@@ -16,6 +17,8 @@ namespace DefaultNamespace
         [SerializeField] private bool _activateAConditionWhenHitUnlocked;
         [SerializeField] private string _hitUnlockedConditionHolderName;
         [SerializeField] private string _hitUnlockedConditionName;
+        [SerializeField] private List<ObjectActivation> _objectActivation;
+        
 
         private int _index;
 
@@ -48,7 +51,19 @@ namespace DefaultNamespace
                 {
                     ValueDontDestroyOnLoad.Instance.ActivateCondition(_hitUnlockedConditionHolderName, _hitUnlockedConditionName, true);
                 }
+
+                foreach(ObjectActivation obj in _objectActivation)
+                {
+                    obj.GameObjectToChange.SetActive(obj.Activate);
+                }
             }
         }
+    }
+
+    [Serializable]
+    public struct ObjectActivation
+    {
+        public bool Activate;
+        public GameObject GameObjectToChange;
     }
 }

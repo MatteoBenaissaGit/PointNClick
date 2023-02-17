@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text DialogText;
     public Image DialogBackground;
     [HideInInspector] public float HideTimer;
+    public Texture2D CursorBase;
+    public Texture2D CursorHover;
 
     private void Awake()
     {
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void AddItem(Item item)
     {
-        CanvasInventory.AddItem(item);
+        CanvasInventory.Instance.AddItem(item);
     }
 
     public void ShowDialog(string text)

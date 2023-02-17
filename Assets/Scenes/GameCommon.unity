@@ -405,12 +405,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 84
+    m_Left: 44
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
-  m_Spacing: 51.14
+  m_Spacing: -41
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -995,6 +995,8 @@ MonoBehaviour:
   DialogText: {fileID: 87936858}
   DialogBackground: {fileID: 1798983268}
   HideTimer: 0
+  CursorBase: {fileID: 2800000, guid: cb9c0f2dd05648a4f8cc3d27d89e274b, type: 3}
+  CursorHover: {fileID: 2800000, guid: e60fee2ce0971034f86886654cd1f040, type: 3}
 --- !u!4 &1915887407
 Transform:
   m_ObjectHideFlags: 0
